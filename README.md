@@ -23,8 +23,11 @@ tbd
       "accessory": "Dht",
       "name": "CPU Temperature",
       "service": "Temperature",
+      "mqtt_broker": "192.168.1.1",
+      "mqtt_topic": "SPA/sensor/Ambient",
       "refresh": "15"
-    }, {
+    },
+    {
       "accessory": "Dht",
       "name": "dht22",
       "name_temperature": "Temperature",
