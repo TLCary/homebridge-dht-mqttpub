@@ -60,7 +60,9 @@ tbd
       "name_humidity": "Humidity",
       "service": "dht22",
       "gpio": "4",
-      "refresh": "15"
+      "refresh": "15",
+      "mqtt_broker": "192.168.1.1",
+      "mqtt_topic": "SPA/sensor/Ambient"
     }
   ]
 }
@@ -74,7 +76,9 @@ tbd
   "name_humidity":      "Indoor Humdity",
   "gpio":               "4",
   "service":            "dht22",
-  "refresh":            "60"
+  "refresh":            "60",
+  "mqtt_broker": "192.168.1.1",
+  "mqtt_topic": "SPA/sensor/Ambient"
 },
 {
   "accessory":          "Dht",
@@ -83,7 +87,9 @@ tbd
   "name_humidity":      "Outdoor Humdity",
   "gpio":               "2",
   "service":            "dht22",
-  "refresh":            "30"
+  "refresh":            "30",
+  "mqtt_broker": "192.168.1.1",
+  "mqtt_topic": "SPA/sensor/Ambient"
 }
 
 ```
