@@ -60,11 +60,10 @@ var hostname = os.hostname();
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory("homebridge-dht", "Dht", DhtAccessory);
+  homebridge.registerAccessory("homebridge-DHT-mqtt-temperature", "DHT-mqtt-temperature", DHTAccessory);
 }
 
-
-function DhtAccessory(log, config) {
+function DHTAccessory(log, config) {
   // The log object is a wrapper for console.log that puts log messages to the outup log. Use this.log('message_to_log')
   this.log = log;
   this.log("Adding Accessory");
